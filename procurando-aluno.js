@@ -1,12 +1,25 @@
-const notasAlunos = [10.0, 6.0, 8.0, 7.0, 6.0];
-const alunosNomes = ["John", "Sara", "Paul", "Linda", "Mark"];
-const boletim = [alunosNomes, notasAlunos];
+const mediasAlunos = [10.0, 6.0, 8.0];
+const alunosNomes  = ["John", "Sara", "Paul", "Linda", "Mark"];
+const relatorio = [alunosNomes, mediasAlunos];
 
-if(boletim[0,0].includes("Sara")){
-console.log(`${"Sara"} está cadastrada.`);
-console.log(`seu nome é ${boletim[boletim[0].indexOf("Sara")]} seu índice no array é ${boletim[0,0].indexOf("Sara")} e sua média é ${boletim[boletim[0,0].indexOf("Sara")]}`);
-}
-else
-{
-    console.log("não está cadastrado.");
+//console.log(relatorio);
+//console.log(alunosNomes,mediasAlunos);
+
+//console.log(relatorio);
+//console.log(alunosNomes,mediasAlunos);
+
+mediasAlunos.forEach(element => {
+    console.log(element);
+});
+
+mediasAlunos.forEach(function(element){
+    console.log(element)}
+);
+
+mediasAlunos.forEach(function(element, index){
+    console.log(element, index, mediasAlunos);
+});
+
+for( element of mediasAlunos){
+    console.log(element);
 }
