@@ -4,7 +4,6 @@ const cliente = {
     email: "joao@firma.com",
     telefone: ["1155555550", "1144444440"],
   };
-  
   cliente.enderecos = [
     {
       rua: "R. Joseph Climber",
@@ -13,13 +12,12 @@ const cliente = {
       complemento: "ap 934",
     },
   ];
-  
-  cliente.enderecos.push({
-    rua: "R. Joseph Ladder",
-    numero: 404,
-    apartamento: false,
-  });
-  
-  listaApenasApartamentos = cliente.enderecos.filter( (enderecos) => enderecos.apartamento === true);
-  
-  console.log(listaApenasApartamentos);
+
+const chavesDoObjeto = Object.keys(cliente);
+
+
+if(chavesDoObjeto.includes("enderecos"))
+    console.log(chavesDoObjeto);
+else
+    console.log("é necessário ter um campo válido.");
+
