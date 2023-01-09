@@ -20,7 +20,6 @@ console.log(nome,idade);
 
 
 imprimeDados(pessoa);
-
 function imprimeDados({nome, idade}){
     console.log(nome, idade);
 }

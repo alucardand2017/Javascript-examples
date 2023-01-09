@@ -4,7 +4,6 @@ const cliente = {
     email: "joao@firma.com",
     telefone: ["1155555550", "1144444440"],
   };
-  
   cliente.enderecos = [
     {
       rua: "R. Joseph Climber",
