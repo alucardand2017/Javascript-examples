@@ -13,5 +13,4 @@ function ordenar(list, property){
 }
 
 const listaOrdenada = ordenar(clientes, "nome");
-
 console.log(listaOrdenada);
