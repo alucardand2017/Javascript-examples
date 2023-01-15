@@ -6,7 +6,7 @@ const livros = require("./listaLivros");
 listaLivros(livros);
 ordena(precosLivros);
 console.log(precosLivros);
-maisBarato(precosLivros);
+maisBarato(precosLivros);   
 
 
 

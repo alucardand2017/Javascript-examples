@@ -1,15 +1,15 @@
-const livros = [
+const listaLivros = [
     {
         titulo: "titulo1",
-        preco: 10
+        preco: 100
     },
     {
         titulo: "titulo2",
-        preco: 20
+        preco: 200
     },
     {
         titulo: "titulo3",
-        preco: 30
+        preco: 300
     },
     {
         titulo: "titulo4",
@@ -37,4 +37,4 @@ const livros = [
     }
 ];
 
-module.exports = livros;
+module.exports = listaLivros;
