@@ -7,11 +7,7 @@ function insertionSort(lista){
 
         while(analisada >0 && lista[analisada].preco < lista[analisada -1].preco){
             
-            itemAnalisado = lista[analisada];
-            itemAnterior = lista[analisada -1];
-            
-            lista[analisada] = itemAnterior;
-            lista[analisada -1] = itemAnalisado;
+            trocaPosicao(lista, analisada);
 
             analisada--;
         }
@@ -20,3 +16,12 @@ function insertionSort(lista){
     console.log(lista);
 }
 insertionSort(livros);
+
+function trocaPosicao(lista, analisada) {
+    itemAnalisado = lista[analisada];
+    itemAnterior = lista[analisada - 1];
+
+    lista[analisada] = itemAnterior;
+    lista[analisada - 1] = itemAnalisado;
+}
+
